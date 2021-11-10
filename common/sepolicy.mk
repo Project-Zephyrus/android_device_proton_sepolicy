@@ -36,9 +36,6 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/proton/sepolicy/common/msft/private
 endif
 
-# Selectively include legacy rules defined by the products
--include device/proton/sepolicy/legacy-common/sepolicy.mk
-
 # Include atv rules on atv product
 ifeq ($(PRODUCT_IS_ATV), true)
 include device/proton/sepolicy/atv/sepolicy.mk
