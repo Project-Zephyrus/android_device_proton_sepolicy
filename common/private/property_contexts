@@ -3,3 +3,9 @@ persist.sys.update_recovery         u:object_r:recovery_update_prop:s0
 
 # Zephyrus
 ro.zephyrus.device                    u:object_r:build_prop:s0
+
+# Dolby Properties
+ro.vendor.dolby.dax.version            u:object_r:exported_system_prop:s0
+ro.vendor.audio.dolby.dax.support      u:object_r:exported_system_prop:s0
+ro.vendor.audio.dolby.dax.version      u:object_r:exported_system_prop:s0
+ro.vendor.audio.dolby.surround.enable  u:object_r:exported_system_prop:s0
