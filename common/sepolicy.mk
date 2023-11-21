@@ -20,13 +20,15 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/proton/sepolicy/common/dynamic \
     device/proton/sepolicy/common/system \
     hardware/google/pixel-sepolicy/flipendo \
-    hardware/google/pixel-sepolicy/turbo_adapter
+    hardware/google/pixel-sepolicy/turbo_adapter \
+    hardware/google/pixel-sepolicy/googlebattery
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
     device/proton/sepolicy/common/dynamic \
     device/proton/sepolicy/common/vendor \
     hardware/google/pixel-sepolicy/flipendo \
-    hardware/google/pixel-sepolicy/turbo_adapter
+    hardware/google/pixel-sepolicy/turbo_adapter \
+    hardware/google/pixel-sepolicy/googlebattery
 endif
 
 # Selectively include legacy rules defined by the products
