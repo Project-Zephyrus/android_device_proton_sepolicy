@@ -19,3 +19,6 @@ persist.sys.xtra-daemon.enabled        u:object_r:xtra_control_prop:s0 exact boo
 
 # Zephyrus
 ro.zephyrus.device                    u:object_r:build_prop:s0
+
+# WiFi
+wifi.interface.                        u:object_r:wifi_hal_prop:s0 prefix string
