@@ -31,6 +31,11 @@ BOARD_VENDOR_SEPOLICY_DIRS += \
     hardware/google/pixel-sepolicy/googlebattery
 endif
 
+ifneq ($(BOARD_USES_QCOM_HARDWARE),true)
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
+    device/proton/sepolicy/common/msft/private
+endif
+
 # Selectively include legacy rules defined by the products
 -include device/proton/sepolicy/legacy-common/sepolicy.mk
 
